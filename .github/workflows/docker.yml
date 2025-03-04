@@ -40,7 +40,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            imsyy/splayer
+            ${{ github.repository }}
             ghcr.io/${{ github.repository }}
 
       - name: Build and push Docker image
